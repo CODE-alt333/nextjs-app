@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
 
 
 export const metadata: Metadata = {
@@ -18,6 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Travel Guide</title>
+        <link rel="icon" href="/icon.ico" sizes="any" />
+      </head>
       <body>
         <Navbar />
         <main className="relative overflow-hidden">
